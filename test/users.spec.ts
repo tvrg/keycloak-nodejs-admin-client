@@ -107,9 +107,9 @@ describe('Users', function () {
   });
 
   /**
-   * exeute actions email
+   * execute actions email
    */
-  it('should send user exeute actions email', async () => {
+  it('should send user execute actions email', async () => {
     // if travis skip it, cause travis close smtp port
     if (process.env.TRAVIS) {
       return;
