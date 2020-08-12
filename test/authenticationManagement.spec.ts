@@ -16,6 +16,8 @@ declare module 'mocha' {
 }
 
 describe('Authentication management', function() {
+  this.timeout(10000);
+  
   before(async () => {
     this.kcAdminClient = new KeycloakAdminClient();
     await this.kcAdminClient.auth(credentials);
